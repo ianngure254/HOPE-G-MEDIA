@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta -->
+    <title>Hope G Media — Visual Design That Makes You Stand Out</title>
+    <meta name="description" content="Freelance graphic designer specialising in brand identity, flyers, social media graphics, business cards, and marketing materials. Bold visuals that convert." />
+    <meta name="author" content="Hope G Media" />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Hope G Media — Graphic Designer" />
+    <meta property="og:description" content="Bold, beautiful design for brands, events, and creatives who refuse to be ignored." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hope G Media" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hope G Media — Graphic Designer" />
+    <meta name="twitter:description" content="Bold, beautiful design for brands, events, and creatives who refuse to be ignored." />
+
+    <!-- Favicon placeholder (replace with real favicon) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- No-flash dark mode script — must run before React -->
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('hgm-theme');
+          var preferred = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          if (preferred === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
